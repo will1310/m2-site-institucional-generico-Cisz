@@ -1,0 +1,301 @@
+:root{
+    --gray-1: #191C1F;
+    --gray-2: #212529;
+    --gray-3: #343A40;
+    --gray-4: #ADB5BD;
+    --gray-5: #CED4DA;
+    --gray-6: #EDF2FF;
+    --gray-7: #F8F9FA;
+    --brand1: #4C6EF5;
+    --brand2: #364FC7;
+
+
+    --font-size1: 3.25rem ;
+    --font-size2: 2.5rem ;
+    --font-size3: 2rem ;
+    --font-size4: 1.25rem ;
+    --font-size5: 1.125rem ;
+    --font-size6: 1rem;
+
+    --font-weight1: 600;
+    --font-weight2: 400;
+
+    --line-height1: 160%;
+    --line-height2: 150%;
+}
+
+/* --header-- */
+.header{
+    background-color: var(--gray-1);
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--brand1);
+}
+
+.header__texts{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.25rem 14.75rem;
+}
+
+.header__button{
+    border: 1px solid var(--gray-7);
+    background-color: var(--gray-1);
+    color: var(--gray-7);
+    font: var(--text1);
+    padding: 1.25rem 2rem;
+}
+/* --header-- */
+
+/* --banner-- */
+.banner{
+    background-color: var(--gray-2);
+    height: 48.813rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__container{
+    position: absolute;
+}
+
+.banner__title{
+    font-size: var(--font-size1);
+    font-weight: var(--font-weight1);
+    line-height: 140%;
+    color: var(--gray-6);
+    margin-bottom: 2rem;
+}
+
+.banner__title > span {
+    color: var(--brand1);
+}
+
+.banner__text{
+    font-size: var(--font-size4);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+    color: var(--gray-4);
+    width: 48rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.banner__button{
+    padding: 1.25rem 2rem;
+    background-color: var(--brand1);
+    border: 1px solid var(--brand1);
+    color: var(--gray-7);
+    font-weight: var(--font-weight1);
+    font-size: var(--font-size6);
+    line-height: var(--line-height2);
+    position: relative;
+    left: 43%;
+    margin-top: 2rem;
+}
+/* --banner-- */
+
+/* --about-- */
+.about{
+    background-color: var(--gray-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.125rem 14.75rem;
+}
+
+.about__container{
+    display: flex;
+    justify-content: space-around;
+    width: 79.3rem;
+
+}
+
+.about__title{
+    color: var(--gray-6);
+    font-size: var(--font-size2);
+    font-weight: var(--font-weight1);
+    line-height: var(--line-height1);
+    width: 38.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.about__text{
+    color: var(--gray-5);
+    font-size: var(--font-size4);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+    width: 36.25rem;
+    height: 7.5rem;
+    text-align: justify;
+}
+/* --about-- */
+
+/* --FAQ-- */
+.faq{
+    background-color: var(--gray-2);
+    height: 70.75rem;
+    padding: 5.125rem 14.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.faq__duvidas{
+    width: 38.75rem;
+    height: 17.5rem;
+}
+
+.faq__duvidas > h2{
+    font-weight: var(--font-weight1);
+    font-size: var(--font-size2);
+    line-height: var(--line-height2);
+    color: var(--gray-6);
+    margin-bottom: 1rem;
+}
+
+.faq__duvidas > p{
+    font-weight: var(--font-weight2);
+    font-size: var(--font-size4);
+    line-height: var(--line-height2);
+    margin: 1.5rem 0px;
+    color: var(--gray-4);
+    text-align: justify;
+    width: 33.3rem;
+}
+
+.faq__duvidas > button{
+    padding: 1.25rem 2rem;
+    background-color: var(--brand1);
+    border: 1px solid var(--brand1);
+    color: var(--gray-7);
+    font-weight: var(--font-weight1);
+    font-size: var(--font-size6);
+    line-height: var(--line-height2);
+    margin-top: 1rem;
+}
+
+.faq__container--right{
+    width: 36.25rem;
+    height: 60.5rem;
+}
+
+.faq__container--right h3{
+    color: var(--gray-6);
+    font-size: var(--font-size3);
+    font-weight: var(--font-weight1);
+    line-height: var(--line-height1);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.faq__container--right p{
+    color: var(--gray-4);
+    font-size: var(--font-size4);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+/* --FAQ-- */
+
+/* --Comments-- */
+.comments{
+    background-color: var(--gray-2);
+    height: 86.6rem;
+    padding: 5.125rem 14.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 79.3rem;
+
+}
+
+.comments__container--right{
+    padding-left: 5.4rem;
+}
+
+.comment__right{
+    background-color: var(--brand1);
+    color: var(--gray-7);
+    padding: 5rem 3.25rem;
+    width: 30.85rem;
+}
+
+.comment__right > h2{
+    font-size: var(--font-size2);
+    font-weight: var(--font-weight1);
+    line-height: var(--line-height1);
+    margin-bottom: 4.4rem;
+    width: 24.35rem;
+
+}
+
+.comment__right > p{
+    font-size: var(--font-size4);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+    text-align: justify;
+    width: 24.35rem;
+}
+
+
+.comments__container--left{
+    width: 38.75rem;
+    height: 76.4rem;
+}
+
+.comment{
+    width: 38.75rem;
+    height: 11.2rem;
+    display: flex;
+    margin-bottom: 5.125rem;
+}
+
+.comments__container--left .comment__text{
+    font-size: var(--font-size5);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+    text-align: justify;
+    color: var(--gray-5);
+    width: 25.75rem;
+}
+
+.comment__info{
+    width: 12rem;
+    height: 5.375rem;
+}
+
+.comment__info h3{
+    font-size: var(--font-size3);
+    font-weight: var(--font-weight1);
+    line-height: var(--line-height1);
+    color: var(--gray-6);
+}
+
+.comment__info p{
+    font-size: var(--font-size6);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+    color: var(--gray-4);
+}
+/* --Comments-- */
+
+.footer{
+    background-color: var(--gray-1);
+    padding: 3.125rem 48.438rem;
+}
