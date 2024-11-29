@@ -25,12 +25,16 @@
 }
 
 /* --header-- */
+
 .header{
     background-color: var(--gray-1);
     height: 6.25rem;
     display: flex;
     align-items: center;
     border-bottom: 2px solid var(--brand1);
+    top: 0;
+    z-index: 1;
+    position: sticky;
 }
 
 .header__texts{
@@ -147,7 +151,8 @@
 }
 
 .faq__duvidas{
-    height: 17.5rem;
+    position: sticky;
+    top: 11.375rem;
 }
 
 .faq__duvidas > h2{
@@ -226,6 +231,9 @@
     background-color: var(--brand1);
     color: var(--gray-7);
     padding: 5rem 3rem;
+    position: sticky;
+    top: 11.375rem;
+
 }
 
 .comment__right > h2{
@@ -247,7 +255,7 @@
 
 
 .comments__container--left{
-    width: 38.5rem;
+    width: 43.5rem;
     height: 76.4rem;
 }
 
