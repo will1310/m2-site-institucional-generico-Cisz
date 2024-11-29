@@ -299,3 +299,80 @@
     background-color: var(--gray-1);
     padding: 3.125rem 48.438rem;
 }
+
+
+/* --modal-- */
+.modal{
+    background-color: var(--gray-2);
+    padding: 2.5rem 1.75rem;
+    border: 2px solid var(--brand2);
+}
+
+.modal__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__head{
+    display: flex;
+    justify-content: space-between;
+    width: 28rem;
+    align-items: center;
+}
+
+.modal__head >h2 {
+    color: var(--gray-7);
+    font-size: var(--font-size3);
+    font-weight: var(--font-weight1);
+    line-height: var(--line-height1);
+    text-align: center;
+}
+
+.fecharModal{
+    background-color: var(--gray-3);
+    border-radius: 0.25rem;
+    width: 2.375rem;
+    height: 2rem;
+    color: var(--gray-4);
+    font-size: var(--font-size4);
+    font-weight: var(--font-weight1);
+    line-height: var(--line-height2);
+    font-family: "Nunito", sans-serif;
+}
+
+.modal__text{
+    width: 28rem;
+    font-size: var(--font-size6);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+    color: var(--gray-4);
+    margin-top: 1.9rem;
+    width: 28rem;
+    height: 4.5rem;
+    text-align: start ;
+}
+
+.modal__email{
+    margin-top: 1.9rem;
+    padding: 0.875rem 1.25rem;
+    background-color: var(--gray-1);
+    border: 1px solid var(--gray-1);
+    color: var(--gray-4);
+    font-size: var(--font-size5);
+    font-weight: var(--font-weight2);
+    line-height: var(--line-height2);
+}
+
+.cadastarEmail{
+    margin-top: 1.9rem;
+    background-color: var(--brand1);
+    border: 1px solid var(--brand1);
+    color: var(--gray-7);
+    height: 3.75rem;
+}
+
+dialog::backdrop{
+    background-color: #191C1FCC;
+}
+
+/* --modal-- */
