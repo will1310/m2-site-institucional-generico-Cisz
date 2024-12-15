@@ -28,7 +28,7 @@
 
 .header{
     background-color: var(--gray-1);
-    height: 6.25rem;
+    height: clamp(3rem, 1.639rem + 5.123vw, 6.25rem);
     display: flex;
     align-items: center;
     border-bottom: 2px solid var(--brand1);
@@ -41,14 +41,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 1.25rem 15.75rem;
+    padding: 1.25rem 11rem;
 }
 
 .header__button{
     border: 1px solid var(--gray-7);
     background-color: var(--gray-1);
     color: var(--gray-7);
-    font: var(--text1);
     padding: 1.25rem 2rem;
 }
 /* --header-- */
@@ -56,14 +55,16 @@
 /* --banner-- */
 .banner{
     background-color: var(--gray-2);
-    height: 48.813rem;
+    height: 42rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .banner__container{
-    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
 }
 
 .banner__title{
@@ -83,8 +84,8 @@
     font-weight: var(--font-weight2);
     line-height: var(--line-height2);
     color: var(--gray-4);
-    width: 48rem;
-    margin: 1rem auto;
+    width: 50%;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -96,9 +97,7 @@
     font-weight: var(--font-weight1);
     font-size: var(--font-size6);
     line-height: var(--line-height2);
-    position: relative;
-    left: 43%;
-    margin-top: 2rem;
+    
 }
 /* --banner-- */
 
@@ -107,7 +106,7 @@
     background-color: var(--gray-1);
     display: flex;
     flex-direction: column;
-    padding: 5.125rem 14.75rem;
+    padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) clamp(2.5rem, -12.206rem + 22.978vw, 14.75rem);
 }
 
 .about__container{
@@ -140,7 +139,7 @@
 /* --FAQ-- */
 .faq{
     background-color: var(--gray-2);
-    padding: 5.125rem 14rem;
+    padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) clamp(2.5rem, -12.206rem + 22.978vw, 14rem);
     display: flex;
     flex-direction: column;
 }
@@ -170,7 +169,7 @@
     margin: 1.5rem 0px;
     color: var(--gray-4);
     text-align: justify;
-    width: 33.3rem;
+    width: clamp(27rem, 11.44rem + 24.289vw, 33.3rem);
 }
 
 .faq__duvidas > button{
@@ -185,8 +184,8 @@
 }
 
 .faq__container--right{
-    width: 37.5rem;
-    height: 60.5rem;
+    width: clamp(27rem, 1.066rem + 40.482vw, 37.5rem);
+    height: clamp(68rem, 86.524rem + -28.916vw, 60.5rem);
 }
 
 .faq__container--right h3{
@@ -211,7 +210,7 @@
 /* --Comments-- */
 .comments{
     background-color: var(--gray-2);
-    padding: 5.125rem 14.75rem;
+    padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) clamp(2.5rem, -12.206rem + 22.978vw, 14.75rem);
     display: flex;
     flex-direction: column;
 }
@@ -221,10 +220,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     margin: 0 auto;
-}
-
-.comments__container--right{
-    padding-left: 5.4rem;
+    width: 100%;
 }
 
 .comment__right{
@@ -233,7 +229,6 @@
     padding: 5rem 3rem;
     position: sticky;
     top: 11.375rem;
-
 }
 
 .comment__right > h2{
@@ -241,7 +236,7 @@
     font-weight: var(--font-weight1);
     line-height: var(--line-height1);
     margin-bottom: 4.4rem;
-    width: 24.35rem;
+    width: clamp(16rem, 5.976rem + 15.662vw, 24.35rem);
 
 }
 
@@ -250,17 +245,17 @@
     font-weight: var(--font-weight2);
     line-height: var(--line-height2);
     text-align: justify;
-    width: 24.35rem;
+    width: clamp(16rem, 5.976rem + 15.662vw, 24.35rem);
 }
 
 
 .comments__container--left{
-    width: 43.5rem;
+    width: clamp(42rem, 30.601rem + -5.627vw, 24rem);
     height: 76.4rem;
 }
 
 .comment{
-    width: 38.75rem;
+    width: clamp(27rem, 12.894rem + 22.04vw, 38.75rem);
     height: 11.2rem;
     display: flex;
     margin-bottom: 5.125rem;
@@ -272,7 +267,7 @@
     line-height: var(--line-height2);
     text-align: justify;
     color: var(--gray-5);
-    width: 24rem;
+    width: clamp(27rem, 30.601rem + -5.627vw, 24rem);
 }
 
 .comment__info{
@@ -295,9 +290,11 @@
 }
 /* --Comments-- */
 
+
 .footer{
     background-color: var(--gray-1);
-    padding: 3.125rem 48.438rem;
+    padding: clamp(2.4rem, 2.188rem + 0.799vw, 3.125rem) clamp(4rem, -9.007rem + 48.967vw, 48.438rem);
+    text-align: center;
 }
 
 
@@ -311,6 +308,7 @@
 .modal__container{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .modal__head{
@@ -346,14 +344,13 @@
     font-weight: var(--font-weight2);
     line-height: var(--line-height2);
     color: var(--gray-4);
-    margin-top: 1.9rem;
     width: 28rem;
     height: 4.5rem;
-    text-align: start ;
+    text-align: justify ;
 }
 
 .modal__email{
-    margin-top: 1.9rem;
+    margin-top: 1.2rem;
     padding: 0.875rem 1.25rem;
     background-color: var(--gray-1);
     border: 1px solid var(--gray-1);
@@ -364,7 +361,6 @@
 }
 
 .cadastarEmail{
-    margin-top: 1.9rem;
     background-color: var(--brand1);
     border: 1px solid var(--brand1);
     color: var(--gray-7);
@@ -376,3 +372,417 @@ dialog::backdrop{
 }
 
 /* --modal-- */
+
+
+@media (max-width: 425px) {
+    .header__texts{
+        padding: 1rem;
+    }
+    .header__button{
+        display: none;
+    }
+
+    .banner{
+        text-align: center;
+        height: 37rem;
+    }
+    .banner__title{
+        font-size: 3rem;
+        width: 21rem;
+        margin: 2rem 2rem;
+        line-height: 130%;
+    }
+    .banner__text{
+        font-size: 1.2rem;
+        width: 21rem;
+        margin: 1rem 2rem;
+        text-align: center;
+    }
+    .banner__button{
+        margin-top: 1rem;
+        position: relative;
+        left: 0;
+    }
+
+    .about{
+        padding: 1rem;
+        height: 20rem;
+    }
+    .about__container{
+        height: 100%;
+        display: block;
+    }
+    .about__title{
+        width: 24rem;
+        justify-content: center;
+        font-size: var(--font-size3);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .about__text{
+        width: 24rem;
+        height: none;
+        text-align: justify;
+    }
+
+
+    .faq{
+        padding: 1rem;
+    }
+    .faq__container{
+        display: block;
+    }
+    .faq__container--left{
+        width: 24rem;
+    }
+    .faq__duvidas{
+        width: 24rem;
+    }
+    .faq__duvidas > button{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .faq__duvidas > h2{
+        font-weight: var(--font-weight1);
+        font-size: var(--font-size3);
+        line-height: var(--line-height2);
+        color: var(--gray-6);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .faq__duvidas > p{
+        font-size: var(--font-size5);
+        margin: 1.5rem 0px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .faq__container--right{
+        width: 24rem;
+    }
+    .faq__container--right h3{
+        font-size: var(--font-size4);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .comments{
+        padding: 1rem;
+    }
+    .comments__container{
+        display: block;
+        width: 100%;
+    }
+    .comments__container--right{
+        padding: 0;
+    }
+    .comment__right{
+        padding: 4rem 3rem;
+        position: none;
+        top: 11.375rem;
+    }
+    .comment__right > h2{
+        font-size: 1.9rem;
+        line-height: var(--line-height2);
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .comment__right > p{
+        width: 100%;
+    }
+
+    .comments__container--left{
+        width: 100%;
+        height: 70rem;
+    }
+    .comment{
+        display: block;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+    .comments__container--left .comment__text{
+        font-size: var(--font-size6);
+        font-weight: var(--font-weight2);
+        line-height: var(--line-height2);
+        text-align: justify;
+        width: 100%;
+    }
+    .comment__info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .comment__info h3{
+        font-size: 1.6rem;
+    }
+    .comment__info p{
+        font-size: 0.9rem;
+    }
+
+    
+    .footer{
+        background-color: var(--gray-1);
+        padding: 2.4rem 4rem;
+        text-align: center;
+    }
+
+
+    .modal{
+        padding: 2.5rem 1.75rem;
+        border: 2px solid var(--brand2);
+        width:86%;
+    }
+    .modal__head{
+        width: 100%;
+    }
+    .modal__head >h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .fecharModal{
+        font-size: var(--font-size5);
+    }
+    .modal__text{
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+    }
+    .modal__email{
+        margin-top: 0rem;
+    }
+}
+
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .header{
+        padding: 0.8rem 0px;
+    }
+    .header__texts{
+        width: 100%;
+        padding: 0rem clamp(0.5rem, -1.368rem + 7.018vw, 2rem);
+    }
+    .header__button{
+        font-size: 0.9rem;
+        padding: 1.25rem clamp(1rem, -0.246rem + 4.678vw, 2rem);
+    }
+
+
+    .banner{
+        height: 42rem;
+    }
+    .banner__container{
+        margin-bottom: 5rem;
+        padding: 0rem 1.3rem;
+    }
+    .banner__text{
+        width: 72%;
+    }
+
+
+    .about{
+        padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) 2rem;
+    }
+    .about__container{
+        display: block;
+        height: clamp(14rem, 25.228rem + -23.392vw, 19rem);
+        text-align: center;
+    }
+    .about__title{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .about__text{
+        width: 100%;
+    }
+
+
+    .faq{
+        padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) 2rem;
+    }
+    .faq__container{
+        display: block;
+    }
+    .faq__duvidas > h2{
+        text-align: center;
+    }
+    .faq__duvidas > p,
+    .faq__duvidas > button{
+        width: 100%
+    }
+
+    .faq__container--right{
+        margin-top: 2rem;
+        width: 100%;
+        height: clamp(52rem, 130.596rem + -163.743vw, 87rem);
+    }
+    .faq__container--right h3{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+
+    .comments{
+        padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) 2rem;
+    }
+    .comments__container{
+        display: block;
+    }
+    .comment__right{
+        padding: 5rem 3rem;
+        margin-bottom: 2rem;
+    }
+    .comment__right > h2{
+        font-size: 2.2rem;
+        margin-bottom: 2.2rem;
+        width: 100%;
+    }
+    .comment__right > p{
+        width: 100%;
+    }
+    
+    
+    .comments__container--left{
+        width: 100%;
+        height: clamp(65rem, 100.93rem + -74.854vw, 81rem);
+    }
+    .comment{
+        width: 100%;
+        display: block;
+        margin-bottom: clamp(1rem, 9.982rem + -18.713vw, 5rem);
+    }
+    .comments__container--left .comment__text{
+        text-align: justify;
+        width: 100%;
+    }
+    .comment__info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .header__texts{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+
+
+    .banner__container{
+        width: 100%;
+        margin: 5rem 0rem;
+        padding: 0rem 5rem;
+    }
+    .banner__text{
+        width: 100%;
+        margin: 2.5rem 0;
+        text-align: center;
+    }
+    
+
+    .about{
+        padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) 2.5rem;
+    }
+    .about__container{
+        height: 12.2rem;
+    }
+    .about__title{
+        display: flex;
+        align-items: center;
+        
+    }
+    .about__text{
+        height: 100%;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        width: 30rem;
+    }
+
+
+    .faq{
+        padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) 2.5rem;
+    }
+    .faq__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .faq__duvidas{
+        position: sticky;
+        top: 11.375rem;
+    }
+    .faq__duvidas > p{
+        margin: 1.5rem 0px;
+        text-align: justify;
+        width: clamp(22.5rem, 8.929rem + 28.235vw, 27rem);
+    }
+    .faq__container--right{
+        width: clamp(21rem, 2.906rem + 37.647vw, 27rem);
+        height: clamp(68rem, 132.251rem + -100.392vw, 84rem);
+    }
+    .faq__container--right h3{
+        font-size: 1.7rem;
+    }
+
+
+
+    .comments{
+        padding: clamp(1rem, -0.207rem + 4.545vw, 5.125rem) 2.5rem;
+    }
+    .comments__container{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .comment__right{
+        padding: 4rem 2.5rem;
+    }
+    .comment__right > h2{
+        margin-bottom: 2rem;
+        width: clamp(16rem, -2.094rem + 37.647vw, 22rem);
+    }
+    .comment__right > p{
+        width: clamp(16rem, -2.094rem + 37.647vw, 22rem);
+    }
+    .comments__container--left{
+        width: clamp(20rem, -1.11rem + 43.922vw, 27rem);
+        height: 80rem;
+    }
+    .comment{
+        width: 100%;
+        height: 11.2rem;
+        display: block;
+        margin-bottom: 5.125rem;
+    }
+    .comments__container--left .comment__text{
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .comment__info{
+        width: 12rem;
+        height: 5.375rem;
+        display: flex;
+    }
+
+    .comment__info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
